@@ -1,0 +1,5 @@
+package com.aiyapro.aiya_pro
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity()
