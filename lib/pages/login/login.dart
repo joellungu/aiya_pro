@@ -56,11 +56,11 @@ class Login extends StatelessWidget {
                           height: 100,
                           width: 100,
                           decoration: const BoxDecoration(
-                            color: Colors.amber,
-                            // image: DecorationImage(
-                            //   image: ExactAssetImage("assets/logo_MIN SANTE.png"),
-                            //   fit: BoxFit.cover,
-                            // ),
+                            //color: Colors.amber,
+                            image: DecorationImage(
+                              image: ExactAssetImage("assets/AiYA.png"),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         // Image.asset(
@@ -160,12 +160,14 @@ class Login extends StatelessWidget {
                             //if (formKey.currentState!.validate()) {
                             //Get.off(Accueil());
 
-                            // Get.dialog(Container(
-                            //   height: 40,
-                            //   width: 40,
-                            //   child: const CircularProgressIndicator(),
-                            //   alignment: Alignment.center,
-                            // ));
+                            Get.dialog(
+                              Container(
+                                height: 40,
+                                width: 40,
+                                alignment: Alignment.center,
+                                child: const CircularProgressIndicator(),
+                              ),
+                            );
                             appController.loagingAgent(
                                 "$codePays${numero.text}", mdp.text);
                             //Get.offAll(Accueil());
